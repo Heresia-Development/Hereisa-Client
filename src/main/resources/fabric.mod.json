@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hereisaclient",
+  "version": "1.0.0",
+  "name": "Hereisa Client",
+  "description": "Premium Dark Industrial Minecraft Utility Mod",
+  "authors": [
+    "mrshivada"
+  ],
+  "contact": {
+    "homepage": "https://hereisa.client",
+    "sources": "https://github.com/mrshivada/hereisaclient"
+  },
+  "license": "MIT",
+  "icon": "assets/hereisaclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.hereisa.client.HereisaClient"
+    ]
+  },
+  "mixins": [
+    "hereisa.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
