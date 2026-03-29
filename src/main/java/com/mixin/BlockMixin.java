@@ -17,11 +17,12 @@ public abstract class BlockMixin {
 
     @Inject(method = "shouldDrawSide", at = @At("HEAD"), cancellable = true)
     private static void onShouldDrawSide(BlockState state, BlockView world, BlockPos pos, Direction side, BlockPos otherPos, CallbackInfoReturnable<Boolean> cir) {
+        
         boolean isXrayActive = HereisaClient.moduleManager.getModules().stream()
                 .anyMatch(m -> m.getName().equalsIgnoreCase("XRay") && m.isEnabled());
 
         if (isXrayActive) {
-            if (!XRay.ORES.contains(state.getBlock())) {
+            if (XRay.ORES != null && !XRay.ORES.contains(state.getBlock())) {
                 cir.setReturnValue(false);
             } else {
                 cir.setReturnValue(true);
@@ -35,7 +36,7 @@ public abstract class BlockMixin {
                 .anyMatch(m -> m.getName().equalsIgnoreCase("XRay") && m.isEnabled());
 
         if (isXrayActive) {
-            cir.setReturnValue(1.0f); 
+            cir.setReturnValue(1.0f);
         }
     }
 }
