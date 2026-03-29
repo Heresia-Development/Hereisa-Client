@@ -11,7 +11,7 @@ public class KillAura extends Module {
     private final double range = 4.0;
 
     public KillAura() {
-        super("KillAura", Category.COMBAT, GLFW.GLFW_KEY_R);
+        super("KillAura", Category.COMBAT);
     }
 
     @Override
