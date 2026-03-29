@@ -21,6 +21,7 @@ public abstract class BlockMixin {
                 .anyMatch(m -> m.getName().equalsIgnoreCase("XRay") && m.isEnabled());
 
         if (isXrayActive) {
+            // Shadowing yerine güvenli cast
             BlockState state = (BlockState) (Object) this;
             if (XRay.ORES != null && !XRay.ORES.contains(state.getBlock())) {
                 cir.setReturnValue(false);
