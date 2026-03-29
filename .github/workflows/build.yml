@@ -25,3 +25,4 @@ jobs:
         with:
           name: Hereisa-Client-Jar
           path: build/libs/*.jar
+
