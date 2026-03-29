@@ -12,7 +12,6 @@
     "sources": "https://github.com/mrshivada/hereisaclient"
   },
   "license": "MIT",
-  "icon": "assets/hereisaclient/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
