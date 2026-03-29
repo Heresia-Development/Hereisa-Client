@@ -3,9 +3,7 @@ package com.hereisa.client.core;
 import com.hereisa.client.modules.combat.*;
 import com.hereisa.client.modules.movement.*;
 import com.hereisa.client.modules.render.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ModuleManager {
@@ -20,19 +18,11 @@ public class ModuleManager {
         modules.add(new ESP());
     }
 
-    public List<Module> getModules() {
-        return modules;
+    public List<Module> getModules() { return modules; }
+    public List<Module> getModulesByCategory(Category c) {
+        return modules.stream().filter(m -> m.getCategory() == c).collect(Collectors.toList());
     }
-
-    public List<Module> getModulesByCategory(Category category) {
-        return modules.stream()
-                .filter(m -> m.getCategory() == category)
-                .collect(Collectors.toList());
-    }
-
     public void onTick() {
-        modules.stream()
-                .filter(Module::isEnabled)
-                .forEach(Module::onTick);
+        modules.stream().filter(Module::isEnabled).forEach(Module::onTick);
     }
 }
