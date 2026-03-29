@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.hereisa.client.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ReachMixin",
+    "EntityRendererMixin",
+    "InGameHudMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
