@@ -7,19 +7,16 @@ public abstract class Module {
     private final String name;
     private final Category category;
     private boolean enabled;
-    
     public float reachValue = 3.5f;
 
     public Module(String name, Category category) {
         this.name = name;
         this.category = category;
-        this.enabled = false;
     }
 
     public void toggle() {
         this.enabled = !this.enabled;
-        if (enabled) onEnable();
-        else onDisable();
+        if (enabled) onEnable(); else onDisable();
     }
 
     public void onEnable() {}
