@@ -7,6 +7,8 @@ public abstract class Module {
     private final String name;
     private final Category category;
     private boolean enabled;
+    
+    public float reachValue = 3.5f;
 
     public Module(String name, Category category) {
         this.name = name;
@@ -14,15 +16,15 @@ public abstract class Module {
         this.enabled = false;
     }
 
-    public void onEnable() {}
-    public void onDisable() {}
-    public void onTick() {}
-
     public void toggle() {
         this.enabled = !this.enabled;
         if (enabled) onEnable();
         else onDisable();
     }
+
+    public void onEnable() {}
+    public void onDisable() {}
+    public void onTick() {}
 
     public String getName() { return name; }
     public Category getCategory() { return category; }
