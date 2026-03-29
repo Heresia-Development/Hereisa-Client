@@ -4,7 +4,6 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ReachMixin",
-    "BlockMixin",
     "InGameHudMixin"
   ],
   "injectors": {
