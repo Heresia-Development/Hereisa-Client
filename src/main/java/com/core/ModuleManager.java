@@ -14,7 +14,6 @@ public class ModuleManager {
         modules.add(new Reach());
         modules.add(new BoatFly());
         modules.add(new Spider());
-        modules.add(new XRay());
         modules.add(new ESP());
     }
 
