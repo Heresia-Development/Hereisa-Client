@@ -41,31 +41,3 @@ Hereisa is open-source and built using **Java 21**. We welcome contributions fro
 git clone [https://github.com/Hereisa-Development/hereisa-client.git](https://github.com/Hereisa-Development/hereisa-client.git)
 cd hereisa-client
 ./gradlew build
-
-The compiled build will be located in build/libs/.
-
-🎨 Visuals & UI
-The interface of Hereisa is inspired by high-end industrial software. It features a Dark/Metallic theme with high-contrast accents, ensuring maximum visibility and a sleek look.
-
-Custom ClickGUI: Fully draggable and pinnable windows with smooth animations.
-
-Highly Configurable: Every module features a deep set of settings (Range, Speed, Mode, etc.).
-
-HUD: A sleek on-screen display showing active modules, FPS, and TPS.
-
-🛡️ Safety & Disclaimer
-Hereisa Client is an educational tool for understanding game engine manipulation and Java bytecode.
-
-Warning: Using this client on public servers (e.g., Hypixel, 2b2t, or local networks) will likely result in a permanent ban. We do not encourage "ruining" others' experiences; use it responsibly on anarchy servers or private testing environments.
-
-🤝 Credits & Inspiration
-Lead Developer: Bnshivada
-
-<p align="center">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Minecraft-1.21.11-blue%3Fstyle%3Dfor-the-badge">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Fabric-v1.21-lightgrey%3Fstyle%3Dfor-the-badge">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Java-21-orange%3Fstyle%3Dfor-the-badge">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/License-MIT-green%3Fstyle%3Dfor-the-badge">
-</p>
-
-Ready to explore the code? [View Source](github.com/Heresia-Development/Hereisa-Client)
